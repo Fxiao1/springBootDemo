@@ -13,12 +13,16 @@ import java.util.List;
 /**
  *
  * @author fxiao
- * @date 2019/2/21 23:14
+ * @date 2019/2/21 15:55
  */
 @RestController
 public class RoleCon implements BaseDataController<Role,Long> {
-    @Autowired
+
     private RoleSer ser;
+    @Autowired
+    public RoleCon(RoleSer ser){
+        this.ser=ser;
+    }
     @Override
     @PostMapping("role")
     public DataPack<Role> save(Role role) {
@@ -50,5 +54,4 @@ public class RoleCon implements BaseDataController<Role,Long> {
         ser.update(role);
         return EntityUtils.succ(role);
     }
-    //git测试：增加无用代码
 }

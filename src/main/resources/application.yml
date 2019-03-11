@@ -1,0 +1,39 @@
+server:
+  port: 8080
+  servlet:
+    context-path: /fx
+spring:
+  datasource:
+    username: fxiao
+    password: 123
+    type: com.alibaba.druid.pool.DruidDataSource
+    #    yml中的“&”符号不需要转义，所以不要写成“&amp;”了
+    url: jdbc:mysql://192.168.187.18:3306/fx_db1?useUnicode=true&characterEncoding=UTF-8
+#      旧的驱动(mysql-connector-java-5.7以前)如下。mysql-connector-java-5.7以后的好像改成这个驱动了“com.mysql.cj.jdbc.Driver”
+#    driver-class-name: com.mysql.jdbc.Driver
+    driver-class-name: com.mysql.cj.jdbc.Driver
+  jpa:
+    show-sql: true
+    hibernate:
+      ddl-auto: create
+#      必须设置hibernate方言，否则不能生成外键。下面的语句仅保证适用于springBoot_2.1.2.RELEASE默认集成的mysql驱动
+    database-platform: org.hibernate.dialect.MySQL57Dialect
+#      下面是老版本方言
+#    database-platform: org.hibernate.dialect.MySQL5Dialect
+
+  http:
+    encoding:
+      charset: UTF-8
+      enabled: true
+# 日志部分
+logging:
+  pattern:
+    # 日志显示格式。比官方的样式多了个行号信息，其余部分保持不变
+    console: '%d{yyyy/MM/dd-HH:mm:ss} %clr(%-5level) %magenta(${PID:- }) -- [%magenta(%15.15t)] %cyan(%45.45logger{45}:%-5line) : %msg%n'
+  # 输出级别，我的项目为debug级别，框架部分为info级别
+  level:
+    com:
+      fx: debug
+    root: info
+  # 日志同步输出到项目根目录下的该文件中
+  file: logFile.log

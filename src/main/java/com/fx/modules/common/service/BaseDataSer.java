@@ -15,8 +15,8 @@ import java.util.List;
   * 如果需要保持这里的参数名的话，需要去掉id的泛型
   */
 public  interface BaseDataSer<T extends BaseDataEntity, ID> {
-    public DataPack<T> findById(ID id);
-    public DataPack<List<T>> findAll();
+    DataPack<T> findById(ID id);
+    DataPack<List<T>> findAll();
 
     /**
      * 存储对象<br>
@@ -24,7 +24,7 @@ public  interface BaseDataSer<T extends BaseDataEntity, ID> {
      * @param t
      * @return
      */
-    public DataPack<T> save(T t);
+    DataPack<T> save(T t);
 
     /**
      * 更改对象<br>
@@ -35,6 +35,6 @@ public  interface BaseDataSer<T extends BaseDataEntity, ID> {
      * @param t
      * @return
      */
-    public DataPack<T> update(T t);
-    public void deleteById(ID id);
+    DataPack<T> update(T t);
+    void deleteById(ID id);
 }

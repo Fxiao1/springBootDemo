@@ -12,9 +12,9 @@ import java.util.List;
  */
 @Controller
 public interface BaseDataController<T,I> {
-    public DataPack<T> save(T t);
-    public DataPack<T> deleteById(Long id);
-    public DataPack<T> findById(I id);
-    public DataPack<List<T>> findAll();
-    public DataPack<T> updata(T t);
+    DataPack<T> save(T t);
+    DataPack<T> deleteById(Long id);
+    DataPack<T> findById(I id);
+    DataPack<List<T>> findAll();
+    DataPack<T> updata(T t);
 }

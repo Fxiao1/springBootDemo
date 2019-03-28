@@ -26,7 +26,7 @@ public class UserCon implements BaseDataController<User,Long> {
     }
     @Override
     @PostMapping("users")
-    public DataPack<User> save(User user) {
+    public DataPack<User> save(@RequestBody User user) {
         return ser.save(user);
     }
 

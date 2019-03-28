@@ -2,7 +2,10 @@ package com.fx.modules.hibernateManyToMany.entity;
 
 import com.fx.modules.common.entity.BaseDataEntity;
 
-import javax.persistence.*;
+import javax.persistence.CascadeType;
+import javax.persistence.Entity;
+import javax.persistence.FetchType;
+import javax.persistence.ManyToMany;
 import java.util.Set;
 
 /**

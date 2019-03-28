@@ -1,5 +1,6 @@
 package com.fx.modules.hibernateManyToMany.entity;
 
+import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import com.fx.modules.common.entity.BaseDataEntity;
 
 import javax.persistence.CascadeType;
@@ -14,6 +15,7 @@ import java.util.Set;
  * @date 2019/2/2 16:18
  */
 @Entity
+@JsonIgnoreProperties("roleSet")
 public class User extends BaseDataEntity {
     private String name;
     @ManyToMany(fetch = FetchType.LAZY,targetEntity = Role.class,mappedBy = "userSet",cascade = CascadeType.ALL)//期待两表不级联

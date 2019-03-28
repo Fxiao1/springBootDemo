@@ -39,6 +39,7 @@ public class RoleSerImpl implements RoleSer {
         if(!EntityUtils.isNeW(role)){
             role.setId(0L);
         }
+        dao.save(role);
         return EntityUtils.succ(role);
     }
 

@@ -25,7 +25,7 @@ public class RoleCon implements BaseDataController<Role,Long> {
     }
     @Override
     @PostMapping("role")
-    public DataPack<Role> save(Role role) {
+    public DataPack<Role> save(@RequestBody Role role) {
         return ser.save(role);
     }
 
@@ -50,7 +50,7 @@ public class RoleCon implements BaseDataController<Role,Long> {
 
     @Override
     @PutMapping("role")
-    public DataPack<Role> updata(Role role) {
+    public DataPack<Role> updata(@RequestBody Role role) {
         ser.update(role);
         return EntityUtils.succ(role);
     }

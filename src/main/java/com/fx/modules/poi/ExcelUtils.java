@@ -76,10 +76,4 @@ public class ExcelUtils {
         return excelData;
     }
 
-    /*@Test
-    public void demo1() throws FileNotFoundException {
-        Map<String,String> result=analysis("E:\\temp\\test.xlsx");
-        System.out.println(JSON.toJSONString(result));
-    }*/
-
 }

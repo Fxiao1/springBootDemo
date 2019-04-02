@@ -1,10 +1,5 @@
 package com.fx.modules.poi;
 
-import com.alibaba.fastjson.JSON;
-import org.junit.Test;
-
-import java.io.FileNotFoundException;
-
 /**
  * TODO:
  *
@@ -13,11 +8,11 @@ import java.io.FileNotFoundException;
  */
 public class ExcelUtilsTest {
 
-    @Test
-    public void test1() throws FileNotFoundException {
-        ExcelUtils excelUtils=new ExcelUtils("e:\\temp\\test.xlsx");
-        System.out.println(JSON.toJSONString(excelUtils.getExcelData()));
-    }
+//    @Test
+//    public void test1() throws FileNotFoundException {
+//        ExcelUtils excelUtils=new ExcelUtils("e:\\temp\\test.xlsx");
+//        System.out.println(JSON.toJSONString(excelUtils.getExcelData()));
+//    }
 
 
 }

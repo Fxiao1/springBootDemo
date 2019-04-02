@@ -1,7 +1,5 @@
 package com.fx.modules.common.entity;
 
-import com.fx.modules.common.tools.StatusType;
-
 import javax.persistence.*;
 import java.sql.Timestamp;
 
@@ -12,6 +10,7 @@ import java.sql.Timestamp;
  */
 @MappedSuperclass
 public class BaseDataEntity {
+
     /*
         如果使用Table来维护主键，则
         1、必须指定sequence表名（可以指定同一个），否则将默认被维护在表名为hibernate_sequences.sequence_name='default'的字段中，如果有多个默认，将在初始化的时候因为重复而报错
@@ -70,5 +69,15 @@ public class BaseDataEntity {
 
     public void setStatus(StatusType status) {
         this.status = status;
+    }
+    /**
+     * TODO: 数据对象状态
+     * @author fxiao
+     * @date 2019/2/3 23:59
+     */
+    public enum StatusType {
+        DELETE,
+        NORMAL,//正常
+        LOCK
     }
 }

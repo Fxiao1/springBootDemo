@@ -13,6 +13,7 @@ import java.util.Set;
 @Entity
 public class Role extends BaseDataEntity {
     private String name;
+//    当前表维护关联关系
     @ManyToMany(fetch= FetchType.LAZY,targetEntity = User.class)
 //    中间表信息
     @JoinTable(name = "tb_user_role",

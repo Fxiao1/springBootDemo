@@ -8,7 +8,7 @@ import javax.persistence.*;
 import java.util.Set;
 
 /**
- * TODO:部门表，验证多对一的关系
+ * 部门表，验证多对一的关系
  *
  * @author fxiao
  * @date 2019/2/1 9:40

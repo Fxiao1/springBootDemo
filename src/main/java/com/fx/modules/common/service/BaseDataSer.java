@@ -7,7 +7,7 @@ import com.fx.modules.common.tools.DataPack;
 import java.util.List;
 
 /**
- * TODO:数据实体基础Service接口
+ * 数据实体基础Service接口
  * @author fxiao
  * @date 2019/2/1 11:53
  */

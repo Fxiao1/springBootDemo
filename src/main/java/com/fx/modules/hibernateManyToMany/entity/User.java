@@ -10,7 +10,7 @@ import javax.persistence.ManyToMany;
 import java.util.Set;
 
 /**
- * TODO:系统用户表，用来测试多对多
+ * 系统用户表，用来测试多对多
  * @author fxiao
  * @date 2019/2/2 16:18
  */

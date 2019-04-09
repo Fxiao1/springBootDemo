@@ -4,7 +4,7 @@ import javax.persistence.*;
 import java.sql.Timestamp;
 
 /**
- * TODO: 数据实体基础类
+ * 数据实体基础类
  * @author fxiao
  * @date 2019/1/26 0:10
  */

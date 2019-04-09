@@ -6,7 +6,7 @@ import javax.persistence.*;
 import java.util.Set;
 
 /**
- * TODO:权限表
+ * 权限表
  * @author fxiao
  * @date 2019/2/2 16:15
  */

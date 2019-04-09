@@ -8,7 +8,7 @@ import javax.persistence.*;
 import java.io.Serializable;
 
 /**
- * TODO:人员表，验证一对一关系
+ * 人员表，验证一对一关系
  * @author fxiao
  * @date 2019/1/26 0:08
  */

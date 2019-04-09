@@ -6,7 +6,7 @@ import javax.persistence.*;
 import java.io.Serializable;
 
 /**
- * TODO:“身份证”表，验证一对一关系
+ * “身份证”表，验证一对一关系
  * @author fxiao
  * @date 2019/1/26 15:25
  */

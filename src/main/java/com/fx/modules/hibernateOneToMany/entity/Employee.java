@@ -5,7 +5,7 @@ import com.fx.modules.common.entity.BaseDataEntity;
 import javax.persistence.*;
 
 /**
- * TODO:员工表，验证多对一
+ * 员工表，验证多对一
  * @author fxiao
  * @date 2019/2/1 9:38
  */

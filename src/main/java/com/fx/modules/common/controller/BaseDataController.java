@@ -6,7 +6,7 @@ import org.springframework.stereotype.Controller;
 import java.util.List;
 
 /**
- * TODO:数据对象类的基础控制类，定义了基础增删查改操作
+ * 数据对象类的基础控制类，定义了基础增删查改操作
  * @author fxiao
  * @date 2019/2/1 14:11
  */

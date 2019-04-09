@@ -3,7 +3,7 @@ package com.fx.modules.common.tools;
 import com.fx.modules.common.entity.BaseDataEntity;
 
 /**
- * TODO:数据实体工具类
+ * 数据实体工具类
  * @author fxiao
  * @date 2019/2/1 13:22
  */

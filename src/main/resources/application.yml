@@ -15,7 +15,7 @@ spring:
   jpa:
     show-sql: true
     hibernate:
-      ddl-auto: create
+      ddl-auto: update
 #      必须设置hibernate方言，否则不能生成外键。下面的语句仅保证适用于springBoot_2.1.2.RELEASE默认集成的mysql驱动
     database-platform: org.hibernate.dialect.MySQL57Dialect
 #      下面是老版本方言
